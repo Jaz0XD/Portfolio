@@ -15,3 +15,80 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+var bolbyPopup = function(){
+/*=========================================================================
+              Magnific Popup
+      =========================================================================*/
+      $('.work-image').magnificPopup({
+        type: 'image',
+        closeBtnInside: false,
+        mainClass: 'my-mfp-zoom-in',
+      });
+
+      $('.work-content').magnificPopup({
+        type: 'inline',
+        fixedContentPos: true,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: false,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+
+      $('.work-video').magnificPopup({
+        type: 'iframe',
+        closeBtnInside: false,
+        iframe: {
+            markup: '<div class="mfp-iframe-scaler">'+
+                      '<div class="mfp-close"></div>'+
+                      '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                    '</div>', 
+
+            patterns: {
+              youtube: {
+                index: 'youtube.com/',
+
+                id: 'v=',
+
+                src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+              },
+              vimeo: {
+                index: 'vimeo.com/',
+                id: '/',
+                src: '//player.vimeo.com/video/%id%?autoplay=1'
+              },
+              gmaps: {
+                index: '//maps.google.',
+                src: '%id%&output=embed'
+              }
+
+            },
+
+            srcAction: 'iframe_src',
+          }
+      });
+
+      $('.gallery-link').on('click', function () {
+          $(this).next().magnificPopup('open');
+      });
+
+      $('.gallery').each(function () {
+          $(this).magnificPopup({
+              delegate: 'a',
+              type: 'image',
+              closeBtnInside: false,
+              gallery: {
+                  enabled: true,
+                  navigateByImgClick: true
+              },
+              fixedContentPos: false,
+              mainClass: 'my-mfp-zoom-in',
+          });
+      });
+    }
+
+    bolbyPopup();
+
