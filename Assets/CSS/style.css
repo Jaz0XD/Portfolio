@@ -296,3 +296,15 @@ tom-image img {
     border-radius: 100px;
     font-size: 24px;
 }
+
+.modal-content {
+    background-color:#033f47;
+    max-height: 80vh;
+    overflow-y: auto;
+    
+}
+.close {
+    background-color: #022a30;
+    color: white;
+    border-color: white;
+}
