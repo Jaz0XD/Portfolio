@@ -254,8 +254,7 @@ img {
 .card-custom .card-custom-image {
     overflow: hidden;
 }
-.card-custom .card-cus
-tom-image img {
+.card-custom .card-custom-image img {
     transition: all 0.4s ease;
 }
 
@@ -307,4 +306,8 @@ tom-image img {
     background-color: #022a30;
     color: white;
     border-color: white;
+}
+
+#font-size{
+    font-size: 13px;
 }
