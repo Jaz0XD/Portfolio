@@ -125,6 +125,9 @@ img {
     font-size: 70px;
     font-family: 'Press Start 2P', cursive;
 }
+
+
+
 @keyframes rainbow {
 
     0% {
@@ -172,6 +175,28 @@ img {
         color: transparent;
     } 
 }
+
+.counter {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#iconbox {
+    width: 100%;
+}
+
+/* #head {
+    width: 50vh;
+} */
+
+span.num {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
 .skill-item .skill-info h4 {
     font-size: 16px;
     font-weight: 500;
