@@ -1,7 +1,7 @@
 // Developed time Counter
 
 let valuesDisplays = document.querySelectorAll(".num");
-let interval = 5000;
+let interval = 1000;
 
 valuesDisplays.forEach((valueDisplay) => {
   let startValue = 0;
